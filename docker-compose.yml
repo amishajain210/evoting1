@@ -1,0 +1,20 @@
+version: '2.0'
+
+services:
+  mysql-docker-container:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=evoting1
+    ports:
+      - 3306:3306
+    volumes:
+      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
+  webapplication1:
+    image: amisha210/evoting_1
+    depends_on:
+      - mysql-docker-container
+    ports:
+      - 8081:8080
+    volumes:
+      - /data/webapplication1
