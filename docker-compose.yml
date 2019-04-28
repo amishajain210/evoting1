@@ -1,5 +1,6 @@
 version: '2.0'
 services:
+services:
   mysql-docker-container:
     image: mysql:5.7
     environment:
