@@ -82,6 +82,13 @@ CREATE TABLE `votecount` (
   `votenumber` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO student1 values('MT2018006','Akshada','Akshada.Kamle@iiitb.org',0);
+INSERT INTO student1 values('MT2018011','Amisha','Amisha.Jain@iiitb.org',0);
+INSERT INTO student1 values('MT2018003','Aditya','Aditya.Awasthy@iiitb.org',0);
+INSERT INTO student1 values('MT2018021','Rakesh','akamle27@gmail.com',0);
+INSERT INTO student1 values('MT2018002','Abhijith','amishajain210@gmail.com',0);
+
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
