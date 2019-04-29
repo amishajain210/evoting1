@@ -18,7 +18,8 @@
 --
 -- Table structure for table `guidelines`
 --
-
+CREATE DATABASE IF NOT EXISTS evoting1;
+GRANT ALL PRIVILEGES ON evoting1.* TO 'root'@'%' IDENTIFIED BY 'root' WITH GRANT OPTION;
 DROP TABLE IF EXISTS `guidelines`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
