@@ -16,7 +16,8 @@ public class DataCon
     try
     {    
         Class.forName("com.mysql.jdbc.Driver");  
-        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/evoting1","root","root"); 
+        con=DriverManager.getConnection("jdbc:mysql://mysql-docker-container:3306/evoting1","evote","evote123");
+        //con=DriverManager.getConnection("jdbc:mysql://localhost:3306/evoting1","root","root"); 
         System.out.println("connection successful");
         st=con.createStatement();
         System.out.println("statemnt");
