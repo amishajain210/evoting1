@@ -9,7 +9,7 @@ services:
       - MYSQL_USER=evote
       - MYSQL_PASSWORD=evote123
     ports:
-      - 3306:3306
+      - 33060:3306
     volumes:
       - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
   webapplication1:
